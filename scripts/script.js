@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const scrollLinks = document.querySelectorAll('a.nav-link');
 
-    // Smooth scrolling for all nav links
+    // Smooth scrolling for all nav links with offset adjustment
     scrollLinks.forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
@@ -19,14 +19,22 @@ document.addEventListener('DOMContentLoaded', function () {
                     navbarToggler.setAttribute('aria-expanded', 'false');
                 }
 
-                // Scroll to the target element
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                // Smooth scroll to the target element with offset
+                smoothScrollTo(targetElement, 60); // Adjust offset value as needed
             }
         });
     });
+
+    // Smooth scroll function with an offset
+    function smoothScrollTo(targetElement, offset = 0) {
+        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
 
     // Auto image slider for the welcome section
     const images = [
@@ -46,72 +54,43 @@ document.addEventListener('DOMContentLoaded', function () {
     // Start changing background image after a delay
     setTimeout(changeBackgroundImage, 3000); // Start after 3 seconds
 
-
-
-
-    // Smooth scroll for specific sections
+    // Attach specific scroll events for each section with a gapHeight
     document.querySelector('a.nav-link[href="#our-services"]').addEventListener('click', function (event) {
         event.preventDefault();
-        smoothScrollTo('our-services', 199); // Adjust gapHeight as needed
+        smoothScrollTo(document.getElementById('our-services'), 259);
     });
 
     document.querySelector('a.nav-link[href="#who-we-are"]').addEventListener('click', function (event) {
         event.preventDefault();
-        smoothScrollTo('who-we-are', 60); // Adjust gapHeight as needed
+        smoothScrollTo(document.getElementById('who-we-are'), 60);
     });
 
-    document.querySelector('a.nav-link[href="#our-customers"]').addEventListener('click', function (event) {
+    document.querySelector('a.nav-link[href="#our-clients"]').addEventListener('click', function (event) {
         event.preventDefault();
-        smoothScrollTo('our-customers', 200); // Adjust gapHeight as needed
-    });
-
-    document.querySelector('a.nav-link[href="#our-structure"]').addEventListener('click', function (event) {
-        event.preventDefault();
-        smoothScrollTo('our-structure', 210); // Adjust gapHeight as needed
+        smoothScrollTo(document.getElementById('our-clients'), 200);
     });
 
     document.querySelector('a.nav-link[href="#our-team"]').addEventListener('click', function (event) {
         event.preventDefault();
-        smoothScrollTo('our-team', 150); // Adjust gapHeight as needed
+        smoothScrollTo(document.getElementById('our-team'), 150);
     });
 
     document.querySelector('a.nav-link[href="#contact-us"]').addEventListener('click', function (event) {
         event.preventDefault();
-        smoothScrollTo('contact-us', 60); // Adjust gapHeight as needed
+        smoothScrollTo(document.getElementById('contact-us'), 60);
     });
 
+    // Event for "Read More" button
     document.getElementById('read-more-btn').addEventListener('click', function () {
-        const aboutUsSection = document.getElementById('who-we-are');
-        aboutUsSection.scrollIntoView({ behavior: 'smooth' });
-    });
-    // Slider controls
-    let currentIndexSlider = 0;
-
-    document.querySelector('.team-slider-control-next').addEventListener('click', function (e) {
-        e.preventDefault();
-        showSlide(currentIndexSlider + 1);
+        smoothScrollTo(document.getElementById('who-we-are'), 60);
     });
 
-    document.querySelector('.team-slider-control-prev').addEventListener('click', function (e) {
-        e.preventDefault();
-        showSlide(currentIndexSlider - 1);
+    // Event for "How Can We Help" button
+    document.getElementById('read-more-btn1').addEventListener('click', function () {
+        smoothScrollTo(document.getElementById('drop-message'), 60);
     });
 
-    function showSlide(index) {
-        const items = document.querySelectorAll('.team-slider-item');
-        const totalItems = items.length;
-
-        if (index >= totalItems) {
-            index = 0;
-        } else if (index < 0) {
-            index = totalItems - 1;
-        }
-
-        currentIndexSlider = index;
-        const offset = -currentIndexSlider * 100;
-        document.querySelector('.team-slider-inner').style.transform = 'translateX(' + offset + '%)';
-    }
-
+    // Counter animation for statistics
     const counters = document.querySelectorAll(".counter");
 
     counters.forEach((counter) => {
