@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap');
 @import url("whoweare.css");
 @import url("servicesslide.css");
 @import url("clients.css");
@@ -6,6 +7,7 @@
 @import url("reachus.css");
 @import url("dropmessage.css");
 @import url("counter.css");
+@import url("trainings.css");
 
 
 
@@ -260,47 +262,61 @@ nav .navbar-nav .nav-link:hover {
 
 
 
-
 .services-heading {
-    width: 90%;
-    max-width: 550px;
-    background-color: white;
+    width: 80%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
     text-align: center;
-    padding: 20px;
+    padding: 20px 10px;
     margin: 60px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
     animation: slideIn3 1s ease-out;
-}
-
-.services-heading4 {
-    width: 90%;
-    max-width: 550px;
-    background-color: white;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    animation: slideIn3 1s ease-out;
+    color: white;
     position: relative;
-    top: -50px;
-    /* Move the element upwards */
-    margin: 0 auto;
-    /* Center horizontally */
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    /* Bold and stylish font for headings */
 }
 
-@keyframes slideIn3 {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.services-heading::before {
+    content: '';
+    position: absolute;
+    top: -75%;
+    left: -50%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 70%);
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
+.services-heading:hover::before {
+    opacity: 0.8;
+}
+
+.services-heading h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1.5px;
+}
+
+.services-heading:hover {
+    transform: translateY(-10px);
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Optional: Styling for paragraphs under the heading */
+.services-heading p {
+    font-size: 1rem;
+    color: #f9f9f9;
+    margin-top: 10px;
+}
 
 .contact-footer {
     background-color: #333;
