@@ -19,12 +19,49 @@
   box-sizing: border-box;
   height: 400px;
   background-color: #333;
+  background-size: cover;
+  /* Ensure the background covers the entire slide */
+  background-position: center;
+  /* Center the background image */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  background-repeat: no-repeat;
+  /* Prevent background from repeating */
+}
+
+/* Individual slide background images */
+#custom-slide1 {
+  background-image: url('../Images/NDT1.jpg');
+  /* Replace with your image path */
+}
+
+#custom-slide2 {
+  background-image: url('../Images/LPT1.jpg');
+  /* Replace with your image path */
+}
+
+#custom-slide3 {
+  background-image: url('../Images/MPT.png');
+  /* Replace with your image path */
+}
+
+#custom-slide4 {
+  background-image: url('../Images/ECT.jpg');
+  /* Replace with your image path */
+}
+
+#custom-slide5 {
+  background-image: url('../Images/SMT.jpg');
+  /* Replace with your image path */
+}
+
+#custom-slide6 {
+  background-image: url('../Images/crack.png');
+  /* Replace with your image path */
 }
 
 .custom-carousel-content {
@@ -39,12 +76,12 @@
 }
 
 .custom-carousel-content h1 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
 .custom-carousel-content p {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
