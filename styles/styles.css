@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url("whoweare.css");
+@import url("servicesslide.css");
+@import url("clients.css");
+@import url("whyus.css");
+@import url("reachus.css");
+@import url("dropmessage.css");
+@import url("counter.css");
+
+
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 14px;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav .navbar-nav {
+    margin: 0 auto;
+    /* Centering the nav items */
+}
+
+nav .navbar-nav .nav-link {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav .navbar-nav .nav-link:hover {
+    background-color: #111;
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 40px;
+    /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px;
+    /* Adjust spacing between logo and text */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.welcome {
+    background-size: cover;
+    background-position: center;
+    padding: 180px 0;
+    text-align: center;
+    color: rgb(255, 226, 35);
+    background-image: url('https://static.vecteezy.com/system/resources/previews/029/230/879/non_2x/industrial-high-tech-equipment-in-production-in-a-workshop-at-a-factory-free-photo.jpg');
+    /* replace with your image URL */
+    font-family: 'Poppins', sans-serif;
+    /* Replace with your desired font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    /* Text shadow for depth */
+    letter-spacing: 1px;
+    /* Adjust letter spacing */
+    transition: background-image 1s ease-out;
+}
+
+.textofwelcome {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.textofwelcome.slide-in {
+    animation: slideIn 1s ease-out forwards;
+}
+
+
+
+
+.welcome h1 {
+    font-size: 48px;
+    /* Adjust font size */
+    font-weight: 600;
+    /* Adjust font weight */
+    line-height: 1.2;
+    /* Adjust line height */
+}
+
+.welcome p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+
+.welcome button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.welcome button:hover {
+    background-color: #0056b3;
+}
+
+.welcome1 {
+    background-image: url('https://img.freepik.com/premium-photo/cogwheel-gears-mechanism-industrial-machinery_263357-3067.jpg');
+    /* replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0;
+    text-align: center;
+    color: white;
+}
+
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    animation: slideIn1 1s forwards;
+    max-width: 600px;
+    /* Limit maximum width */
+    width: 70%;
+}
+
+
+
+@keyframes slideIn1 {
+    from {
+        transform: translate(-50%, -100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .welcome1 {
+        padding: 190px 50px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .welcome-text {
+        padding: 15px;
+        /* Adjust padding for smaller screens */
+    }
+}
+
+.welcome-text h1 {
+    font-size: 36px;
+    margin: 0;
+
+}
+
+.welcome-text p {
+    font-size: 18px;
+}
+
+.welcome h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+
+.welcome1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+.services-heading {
+    width: 90%;
+    max-width: 550px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 60px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: slideIn3 1s ease-out;
+}
+
+.services-heading4 {
+    width: 90%;
+    max-width: 550px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: slideIn3 1s ease-out;
+    position: relative;
+    top: -50px;
+    /* Move the element upwards */
+    margin: 0 auto;
+    /* Center horizontally */
+}
+
+@keyframes slideIn3 {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.contact-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-bottom: 1px solid #444;
+}
+
+.department {
+    width: 30%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.footer-section {
+    width: 30%;
+    text-align: center;
+}
+
+.footer-section img {
+    width: 150px;
+}
+
+.footer-section p {
+    text-align: justify;
+}
+
+.footer-section button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+}
+
+.footer-section button:hover {
+    background-color: #555;
+}
+
+.footer-section input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+.footer-section iframe {
+    border: none;
+    width: 100%;
+    height: 200px;
+}
+
+
+
+
+.team-slider {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.team-slider-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.team-slider-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.team-slider-item img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    /* Adjust max height as needed */
+    object-fit: cover;
+    /* Cover the entire container */
+}
+
+.team-slider-control-prev,
+.team-slider-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+}
+
+.team-slider-control-prev {
+    left: 10px;
+}
+
+.team-slider-control-next {
+    right: 10px;
+}

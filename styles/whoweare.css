@@ -1,0 +1,101 @@
+/* Button for Download Brochure */
+.btn-download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f8c22e;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: -20px;
+  z-index: 2;
+  /* Move the button slightly above the image */
+  left: 45%;
+  /* Center horizontally */
+  transform: translateX(-50%);
+  /* Adjust for 50% of button's width */
+}
+
+.btn-download:hover {
+  background-color: #e0a619;
+}
+
+/* Adjust spacing around the image */
+.who-we-are img {
+  margin-top: 15px;
+}
+
+.who-we-are {
+  padding: 50px 0;
+  text-align: left;
+  position: relative;
+  /* Ensure that the absolute positioning is relative to this container */
+}
+
+.who-we-are img {
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adding shadow to the image */
+  opacity: 0;
+  animation: slide-in 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.description {
+  opacity: 0;
+  animation: slide-in-text 1s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-text {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.description h2 {
+  font-size: 28px;
+}
+
+.description p {
+  font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .who-we-are {
+    padding: 30px 0;
+  }
+
+  .who-we-are img {
+    margin-bottom: 20px;
+  }
+
+  .btn-download {
+    top: -15px;
+    /* Adjust for mobile */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

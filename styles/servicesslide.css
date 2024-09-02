@@ -1,0 +1,107 @@
+.carousel-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.custom-carousel {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.custom-carousel-slide {
+  min-width: 25%;
+  /* Show 4 slides at once */
+  box-sizing: border-box;
+  height: 400px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.custom-carousel-content {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-carousel-content h1,
+.custom-carousel-content p {
+  color: white;
+}
+
+.custom-carousel-content h1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.custom-carousel-content p {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+/* Button styling for scrolling */
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .custom-carousel-slide {
+    min-width: 50%;
+    /* Show 2 slides at once for smaller screens */
+  }
+
+  .scroll-button {
+    right: 5px;
+  }
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carousel-control.prev {
+  left: 10px;
+  /* Position the left (previous) button */
+}
+
+.carousel-control.next {
+  right: 10px;
+  /* Position the right (next) button */
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Change background color on hover */
+}

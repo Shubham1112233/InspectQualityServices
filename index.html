@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspect Quality Services</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <!-- Logo and Navbar Brand -->
+            <div class="navbar-brand-container">
+                <img src="./Images/logo.jpg" alt="Logo" class="navbar-logo">
+                <a class="navbar-brand" href="#">Inspect Quality Services</a>
+            </div>
+
+            <!-- Navbar Toggler Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#who-we-are">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#our-services">Our Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#our-customers">Our Customers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#our-structure">Our Structure</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#our-team">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <div class="welcome-content">
+                <div class="textofwelcome">
+                    <h1>Recognized leader in non destructive testing services</h1>
+                    <h3>Trust our experienced team to provide you with the highest level of precision and quality in
+                        mechanical ndt testing</h3>
+                    <button id="read-more-btn">Read More</button>
+                    <button id="read-more-btn">How Can We Help</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="welcome1">
+            <!-- replace with your image URL -->
+            <div class="welcome-text">
+                <h1>20+ YEARS OF EXPERIENCE</h1>
+                <p>The company was incorporated in the Maharashtra state of India in 2002. Mr. Siddhanath Jagtap as a
+                    Master of Science from Pune University. ASNT Level – II in UT/MP/DP/VT/Eddy Current Testing is the
+                    proprietor of this Organization .</p>
+            </div>
+        </section>
+
+
+        <section id="who-we-are" class="who-we-are">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <a id="download-brochure" href="./assets/broucher-integrated.pdf" download="Brochure"
+                            class="btn-download">Download
+                            Brochure</a>
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/5/HZ/RU/GG/9105239/metals-testing-services-500x500.jpg"
+                            class="img-fluid rounded shadow-lg" alt="Product Image">
+                    </div>
+                    <div class="col-md-6 description">
+                        <h2>Who We Are</h2>
+                        <p>Beginning with the ISO 9001:2008 certified organization and again updating with ISO 9001:2015
+                            certified and much more certifications, our goal is to be responsive to the needs of our
+                            customers
+                            by supplying and exporting the highest possible quality products on time with the customer’s
+                            specification. Our company also adds values of some technical suggestion with the technical
+                            drawings
+                            & material specification grade for the best manufacturing process and for the best
+                            components.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="services-heading">
+            <h2>Our Services</h2>
+        </div>
+
+
+        <div id="our-services" class="carousel-wrapper">
+
+            <div class="custom-carousel">
+                <div class="custom-carousel-slide" id="custom-slide1">
+                    <div class="custom-carousel-content">
+                        <h1>NDT Testing</h1>
+                        <p>Non-destructive testing (NDT) is a wide group of analysis techniques used in the industry to
+                            evaluate the properties of a material, component, or system without causing damage.</p>
+                    </div>
+                </div>
+                <div class="custom-carousel-slide" id="custom-slide2">
+                    <div class="custom-carousel-content">
+                        <h1>Liquid Penetration Testing</h1>
+                        <p>Liquid penetrant testing is a widely applied method used to locate surface-breaking defects
+                            in all non-porous materials (metals, plastics, or ceramics).</p>
+                    </div>
+                </div>
+                <div class="custom-carousel-slide" id="custom-slide3">
+                    <div class="custom-carousel-content">
+                        <h1>Magnetic Particle Testing</h1>
+                        <p>Magnetic particle testing is a non-destructive testing method for detecting surface and
+                            slightly subsurface discontinuities in ferromagnetic materials.</p>
+                    </div>
+                </div>
+                <div class="custom-carousel-slide" id="custom-slide4">
+                    <div class="custom-carousel-content">
+                        <h1>Eddy Current Testing</h1>
+                        <p>Eddy current testing is a non-destructive testing method that uses electromagnetic induction
+                            to detect flaws in conductive materials.</p>
+                    </div>
+                </div>
+                <div class="custom-carousel-slide" id="custom-slide5">
+                    <div class="custom-carousel-content">
+                        <h1>Stationary MPI Machine Testing</h1>
+                        <p>It is a non-destructive testing method used to detect surface and slightly subsurface
+                            discontinuities in ferromagnetic materials.</p>
+                    </div>
+                </div>
+                <div class="custom-carousel-slide" id="custom-slide6">
+                    <div class="custom-carousel-content">
+                        <h1>Crack Part Testing</h1>
+                        <p>It is a non-destructive testing technique used to identify and evaluate surface and
+                            subsurface cracks in materials.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll Button -->
+            <button id="scroll-right" class="scroll-button">→</button>
+        </div>
+
+
+
+
+
+        <div class="services-heading">
+            <h2>Our Clients</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="./Images/Mahindra2.png" class="card-img-top" alt="Client 1">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="./Images/emerson.jpg" class="card-img-top" alt="Client 2">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="./Images/Sundaram1.avif" class="card-img-top" alt="Client 3">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="./Images/Sac.avif" class="card-img-top" alt="Client 4">
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="./Images/Starways.jpg" class="card-img-top" alt="Client 1">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="./Images/carraro-india.png" class="card-img-top" alt="Client 2">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="./Images/Hyundai-Banner-leap-2-1200px.png" class="card-img-top" alt="Client 3">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="./Images/Tremec.png" class="card-img-top" alt="Client 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="feature-box" id="why-us">
+                        <h2 class="feature-title">Why Us?</h2>
+                        <p>We are widely admired by our customers since we maintain excellent quality and
+                            cost-effectiveness of
+                            the broad range of products provided by us.</p>
+                        <p>Our dexterous professionals fabricate the offered products that are required by our customers
+                            according to the predefined standards of the industry.</p>
+                        <p>We have a proven record of providing quality services for 10+ years working in this industry.
+                            We also
+                            have overseas and Indian clients with whom we have worked.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="feature-box" id="client-satisfaction">
+                        <h2 class="feature-title">Client Satisfaction</h2>
+                        <p>To provide the highest level of satisfaction to our respected customers, we perform moral
+                            policies in
+                            all our business processes.</p>
+                        <p>In order to attain the trust of our clients, we provide our products in varied sizes, shapes,
+                            and
+                            specifications, which could also be customized as per their specifications.</p>
+                        <p>The team of talented professionals works in close harmonization with the patrons to know
+                            their
+                            precise
+                            requirements and provide the products accordingly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reach-us">
+            <div class="services-heading">
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="custom-section container mt-5">
+                <div class="text-center mb-4">
+                    <h5 class="text-uppercase text-primary">Focused with Integrity</h5>
+                    <h2 class="font-weight-bold">You can reach us to use our Expertise and Competency</h2>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-3 mb-4">
+                        <div class="custom-card text-center animate">
+                            <i class="fas fa-phone mb-3"></i> <!-- Font Awesome phone icon -->
+                            <h5>Calling Support</h5>
+                            <p>WhatsApp +91 90675 57404</p>
+                            <p>Toll Free +91 70574 64149</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="custom-card text-center animate">
+                            <i class="fas fa-building mb-3"></i> <!-- Font Awesome office icon -->
+                            <h5>Corporate Office</h5>
+                            <p>(Integrated Group)</p>
+                            <p>S.No. 691/1B/2, Adinathnagar, Pune-Nashik Road, Bhosari, Pune - 411039</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="custom-card text-center animate">
+                            <i class="fas fa-envelope mb-3"></i> <!-- Font Awesome email icon -->
+                            <h5>Email Information</h5>
+                            <p>info@integratednde.com</p>
+                            <p>sales@integratednde.com</p>
+                        </div>
+                    </div>
+                    <!-- Add more blocks as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section class="counter-section">
+            <div class="counter-container">
+                <div class="counter" data-target="150">0</div>
+                <div class="counter-label">Happy Customers</div>
+            </div>
+            <div class="counter-container">
+                <div class="counter" data-target="50">0</div>
+                <div class="counter-label">Projects Served</div>
+            </div>
+            <div class="counter-container">
+                <div class="counter" data-target="15">0</div>
+                <div class="counter-label">Years of Experience</div>
+            </div>
+            <div class="counter-container">
+                <div class="counter" data-target="25">0</div>
+                <div class="counter-label">Industrial Projects</div>
+            </div>
+        </section>
+
+        <section class="drop-message">
+            <div class="contact-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="text-uppercase">Try Our Service</h6>
+                            <h2 class="font-weight-bold">Drop Us a Line</h2>
+                            <p>We're very approachable and would love to speak to you. Feel free to call, send us an
+                                email, or
+                                simply complete the enquiry form.</p>
+
+                            <form id="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name *"
+                                            required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Email Address *" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="phone" placeholder="Phone Number *"
+                                            required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="subject"
+                                            placeholder="Subject (optional)">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" rows="4"
+                                        placeholder="Write your message..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Request Estimate</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <div class="services-heading">
+            <h2>Our Team</h2>
+        </div>
+
+        <div id="our-team" class="container mt-5">
+            <div id="teamSlider" class="team-slider">
+                <div class="team-slider-inner">
+                    <div class="team-slider-item active">
+                        <img src="./Images/work3.jpeg" class="d-block mx-auto" alt="Work 2">
+                    </div>
+                    <div class="team-slider-item">
+                        <img src="./Images/work4.jpeg" class="d-block mx-auto" alt="Work 1">
+                    </div>
+                    <div class="team-slider-item">
+                        <img src="./Images/work1.jpeg" class="d-block mx-auto" alt="Work 5">
+                    </div>
+                    <div class="team-slider-item">
+                        <img src="./Images/work2.jpeg" class="d-block mx-auto" alt="Work 5">
+                    </div>
+                    <div class="team-slider-item">
+                        <img src="./Images/work5.jpeg" class="d-block mx-auto" alt="Work 5">
+                    </div>
+
+                    <div class="team-slider-item">
+                        <img src="./Images/work6.jpeg" class="d-block mx-auto" alt="Work 5">
+                    </div>
+                </div>
+                <a class="team-slider-control-prev" role="button" href="#">
+                    &lt;
+                </a>
+                <a class="team-slider-control-next" role="button" href="#">
+                    &gt;
+                </a>
+            </div>
+        </div>
+
+
+        <div id="contact-us" class="contact-footer">
+            <div class="contact-info">
+                <div class="department" id="domestic-department">
+                    <h3>Enquiry</h3>
+                    <p><strong>Phone</strong><br>+91-83800-57960</p>
+                    <p><strong>Email</strong><br>inspectquality@yahoo.in</p>
+                </div>
+                <div class="department" id="export-department">
+                    <h3>HR Department</h3>
+                    <p><strong>Phone</strong><br>+91-8320287783</p>
+                    <p><strong>Email</strong><br>hriqs@gmail.com</p>
+                </div>
+                <div class="department" id="office-contact">
+                    <h3>Office</h3>
+                    <p><strong>Address</strong><br>Sr no 14/15, Chavan-nagar, Near Shankar Maharaj Math, Pune-Satara
+                        road.<br>Pune - 411043,
+                        Maharashtra, India</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-section" id="about">
+                    <img src="./Images/logo.jpg" alt="IQS logo">
+                    <p>Inspect Qualit Services will strive to serve superior quality services at affordable rate. Our
+                        team comprises of qualified workers with all necesarry certifications for testing</p>
+                </div>
+                <div class="footer-section" id="map">
+                    <h3>Google Map</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.333387435992!2d73.8527161!3d18.468552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eab0851b0949%3A0xfe2ceb6b17f9f64a!2sHatti%20Chowk%2C%20Pune%2C%20Maharashtra%20411043!5e0!3m2!1sen!2sin!4v1719489160675!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="footer-section" id="download">
+                    <h3>Download</h3>
+                    <p>Just enter your email id and you will get our complete brochure on your email.</p>
+                    <input type="email" placeholder="Email Address..." id="email">
+                    <button onclick="sendEmail()">Send</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        emailjs.init("2RGHyZA_tcmgkYbGg");
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Gather form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Send data to EmailJS
+            emailjs.send('service_qgp03tm', 'template_00s4fqm', formData)
+                .then(function (response) {
+                    console.log('Sent successfully:', response);
+                    alert('Thank you for your message! We will get back to you soon.');
+                    document.getElementById('contactForm').reset(); // Reset form after successful submission
+                }, function (error) {
+                    console.error('Failed to send:', error);
+                    alert('Oops! Something went wrong. Please try again later.');
+                });
+        });
+
+    </script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/carousel.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
