@@ -55,7 +55,7 @@
 }
 
 #custom-slide3 {
-  background-image: url('../Images/CallibrationMPCI.jpg');
+  background-image: url('../Images/Callibration25.jpeg');
 }
 
 #custom-slide3b {
@@ -83,15 +83,15 @@
 }
 
 #custom-slide9 {
-  background-image: url('../Images/radiography-testing-1.webp');
+  background-image: url('../Images/radio25.jpeg');
 }
 
 #custom-slide10 {
-  background-image: url('../Images/positive-material-identification-1.webp');
+  background-image: url('../Images/positive25.jpeg');
 }
 
 #custom-slide11 {
-  background-image: url('../Images/portal-hardness-testing-1.webp');
+  background-image: url('../Images/portable25.jpeg');
 }
 
 #custom-slide12 {
@@ -103,7 +103,11 @@
 }
 
 #custom-slide14 {
-  background-image: url('../Images/lifting-equipment-inspection-1.webp');
+  background-image: url('../Images/lifting25.jpeg');
+}
+
+#custom-slide17 {
+  background-image: url('../Images/lifting25.jpeg');
 }
 
 .custom-carousel-content {
