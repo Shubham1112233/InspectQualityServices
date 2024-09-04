@@ -60,6 +60,11 @@ document.addEventListener('DOMContentLoaded', function () {
         smoothScrollTo(document.getElementById('our-services'), 259);
     });
 
+    document.querySelector('a.nav-link[href="#welcome"]').addEventListener('click', function (event) {
+        event.preventDefault();
+        smoothScrollTo(document.getElementById('welcome'), 259);
+    });
+
     document.querySelector('a.nav-link[href="#who-we-are"]').addEventListener('click', function (event) {
         event.preventDefault();
         smoothScrollTo(document.getElementById('who-we-are'), 60);
